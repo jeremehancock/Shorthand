@@ -1,11 +1,12 @@
 #!/bin/bash
+set -e
 PACKAGE="shorthand"
 VERSION="$(jq -r .version $PACKAGE/metadata.json)"
 
+mkdir -p zips
 zip -r zips/$PACKAGE-$VERSION.zip $PACKAGE
 
 git add .
 git commit -m "Build pushed $(date)"
 git push origin main
 echo "Complete"
-
