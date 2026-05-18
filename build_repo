@@ -1,5 +1,5 @@
 #!/bin/bash
-PACKAGE="shorthand"
+PACKAGE="Shorthand"
 VERSION="$(jq -r .version $PACKAGE/metadata.json)"
 
 zip -r zips/$PACKAGE-$VERSION.zip $PACKAGE
