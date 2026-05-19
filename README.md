@@ -2,6 +2,8 @@
 
 Define a tag once, drop it anywhere in your pages and posts. Works with both the Markdown and HTML editors.
 
+![Shorthand](https://raw.githubusercontent.com/jeremehancock/Shorthand/refs/heads/main/assests/banner.png "Shorthand")
+
 ## Install
 
 1. Download the latest version from the zips directory.
