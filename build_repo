@@ -2,7 +2,7 @@
 PACKAGE="shorthand"
 VERSION="$(jq -r .version $PACKAGE/metadata.json)"
 
-usr/bin/zip -r zips/$PACKAGE-$VERSION.zip $PACKAGE
+zip -r zips/$PACKAGE-$VERSION.zip $PACKAGE
 
 git add .
 git commit -m "Build pushed $(date)"
